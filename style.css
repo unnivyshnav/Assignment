@@ -6,7 +6,7 @@
 	box-sizing: border-box;
 }
 html {
-	font-size: 10px;
+	font-size: 10px; 
 	/* font-family: 'Montserrat', sans-serif; */
 	font-family: 'Oxygen', sans-serif;
 	scroll-behavior: smooth;
@@ -199,8 +199,59 @@ p {
     height: 90%;
     object-fit: fill;
     background-attachment: fixed;
+	z-index: -1;
   }
 
+  ul, li{
+	  display: inline;
+	  margin-right: 10px;
+  }
+
+  
+
+  .cta {
+	
+	text-align:fit-content;
+	display: inline-block;
+    padding: 10px 10px;
+	color: white;
+	background-color: transparent;
+	border: 1px solid rgb(255, 255, 255);
+	font-size: 2.1rem;
+	/* text-transform: uppercase; */
+	letter-spacing: 0.1rem;
+	margin-top: 21px;
+	transition: 0.3s ease;
+	transition-property: background-color, color, border;
+}
+.cta:hover {
+	color: white;
+	background-color: crimson;
+	border: 1px solid crimson;
+	
+}
+
+.cta1 {
+	
+	text-align:fit-content;
+	display: inline-block;
+    padding: 10px 10px;
+	color: white;
+	border: 1px solid rgb(228, 74, 104);
+	background-color: rgb(228, 74, 104);
+	font-size: 2.1rem;
+	/* text-transform: uppercase; */
+	letter-spacing: 0.1rem;
+	margin-top: 21px;
+	transition: 0.3s ease;
+	transition-property: background-color, color, border;
+}
+.cta1:hover {
+	color: white;
+	border: 1px solid crimson;
+	background-color:crimson;
+}
+*/
 /* #hero {
 	background-image: url(./img/hero-bg.png);
 	background-size: cover;
@@ -786,14 +837,14 @@ End Projects section */
 /* End Keyframes */
 
 /* Media Query For Tablet */
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
 	.cta {
 		font-size: 2.5rem;
 		padding: 20px 60px;
 	}
 	h1.section-title {
 		font-size: 6rem;
-	}
+	} */
 
 	/* Hero */
 	#hero h1 {
@@ -920,3 +971,69 @@ End Projects section */
 	}
 }
 /* End  Media Query For Desktop */
+
+
+/* login */
+
+.form{
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    opacity: 99%;
+    max-width: 260px;
+    margin: 200px auto 100px;
+    padding: 10px 45px 30px 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+}
+.form p{
+    font-size: 15px;
+    padding: 1px;
+    text-align: center;
+}
+.form input{
+    outline: 0;
+    border-radius: 10px;
+    background: #F2F2F2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.form input:hover{
+    background-color: #D3F8F9;
+    transition: all 1s ease 0s;
+}
+.form input:focus{
+    background-color: #D3F8F9;
+    transition: all 1s ease 0s;
+}
+.form button{
+    text-transform: uppercase;
+    outline: 0;
+    border-radius: 10px;
+    background: #1ADBE5;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+}
+.form button:hover, .form button:active, .form button:focus{
+    background-color: #06C5CF;
+    transition: all 1s ease 0s;
+}
+.form .message{
+    margin: 15px 0 0;
+    color: #B3B3B3;
+    font-size: 12px;
+}
+.form .message a{
+    color: #06C5CF;
+    text-decoration: none;
+}
