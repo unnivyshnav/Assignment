@@ -18,7 +18,9 @@ body {
   background-size: cover;
   font-family: "Quicksand", sans-serif;
 }
-
+a {
+  text-decoration: none;
+}
 /* ################################## Form Body Design ################################################ */
 .form-container {
   max-width: 500px;
@@ -117,12 +119,16 @@ h2 {
   font-family: inherit;
   font-size: 16px;
   padding: 2px;
-  margin-top: 10px;
-  width: 100%;
+  /* margin-top: 10px; */
+  margin-bottom: 30px;
+  width: 34%;
   border-radius: 10px;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 .form-container .bttn {
-  width: 100%;
+  background-color: crimson;
+  width: %;
   border-radius: 5px;
   border-color: #f0f0f03a;
   border-bottom: 4px solid #f0f0f03a;
@@ -164,6 +170,8 @@ h2 {
 .eye {
   float: right;
   cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 2px;
 }
 .eye i {
   transform: translateY(-100%);
