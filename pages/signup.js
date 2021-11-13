@@ -10,7 +10,8 @@ function validateFn() {
 
   let regExpWeak1 = /[a-zA-Z]/;
   let regExpMedium2 = /\d+/;
-  let regExpStrong3 = /.[!,@,#,$,%,^,&,*,?,_,~,-,(,)]/;
+  let regExpStrong3 =
+    /(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
   // let regExpMobile = /^(\d{3})(\.|-)?(\d{3})(\.|-)?(\d{4})$/;
   let regExpMobile = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
 
@@ -62,7 +63,7 @@ function validateFn() {
     setErrorFor(password, "Password cannot be blank");
     valid = false;
   } else if (
-    password.value.trim().length >= 10 &&
+    password.value.trim().length >= 9 &&
     password.value.match(regExpWeak1) &&
     password.value.match(regExpMedium2) &&
     password.value.match(regExpStrong3)
@@ -98,9 +99,10 @@ function trigger() {
   const medium = document.querySelector(".medium");
   const strong = document.querySelector(".strong");
   const text = document.querySelector(".text");
-  let regExpWeak = /[a-z]/;
+  let regExpWeak = /[a-zA-Z]/;
   let regExpMedium = /\d+/;
-  let regExpStrong = /.[!,@,#,$,%,^,&,*,?,_,~,-,(,)]/;
+  let regExpStrong =
+    /(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
 
   if (s.value != "") {
     indicator.style.display = "block";
@@ -120,7 +122,7 @@ function trigger() {
     )
       no = 2;
     if (
-      s.value.length >= 10 &&
+      s.value.length >= 9 &&
       s.value.match(regExpWeak) &&
       s.value.match(regExpMedium) &&
       s.value.match(regExpStrong)

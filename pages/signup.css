@@ -196,7 +196,7 @@ h2 {
 }
 
 .form-check.success i {
-  color: #2ecc71;
+  color: #12df67;
   position: absolute;
   transform: translateY(105%);
   font-size: 25px;
@@ -213,6 +213,8 @@ h2 {
   cursor: pointer;
   transform: translateY(00%);
   font-size: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 .eye i {
   transform: translateY(-100%);
@@ -230,7 +232,7 @@ h2 {
 /* ################################## Password strength indicator Design ################################################ */
 .indicator {
   height: 5px;
-  width: 100%;
+  width: 90%;
   margin-top: 10px;
   margin-left: 30px;
   display: flex;
@@ -260,7 +262,7 @@ h2 {
   border-radius: 5px;
 }
 .indicator span.weak:before {
-  background-color: #ff4757;
+  background-color: #fd0015;
 }
 .indicator span.medium:before {
   background-color: orange;
